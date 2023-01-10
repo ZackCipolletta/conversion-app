@@ -39,12 +39,3 @@ function tbsToMls(orignal) {
   let originalMeasure = orignal;
   return originalMeasure + " tabllespoons is " + converted + " milliliters of water.";
 }
-
-
-// function poundToOunce(pound) {
-//     ounce = pound * 0.0625;
-//     let pound = pounds;
-//     return pounds + "pounds" is " +  + " pounds of rice.";
-// }
-
-// A function that converts teaspoons (tsp), tablespoons (tbsp), and cups to milliliters (ml).
