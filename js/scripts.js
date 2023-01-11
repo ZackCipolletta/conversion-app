@@ -1,3 +1,5 @@
+window.onload = function() {
+
 function ozToPound(orignal) {
     converted = orignal * 0.0625;
     let originalMeasure = orignal;
@@ -38,4 +40,31 @@ function tbsToMls(orignal) {
   converted = orignal * 14.7868;
   let originalMeasure = orignal;
   return originalMeasure + " tabllespoons is " + converted + " milliliters of water.";
+}
+
+let body= document.body;
+//.style.background;
+
+let button1 = document.querySelector(".button1");
+let button2 = document.querySelector(".button2");
+let h1 = document.querySelector(".class1");
+
+h1.onclick = function() {
+  console.log("Hello");
+};
+
+
+button1.onclick = function() {
+  console.log("hello Hernan!")
+  body.style.background="black";
+  body.style.color = "white";
+};
+
+button2.onclick = function() {
+  console.log("hello Hernan!")
+  body.style.background="white";
+  body.style.color = "black";
+};
+
+
 }
