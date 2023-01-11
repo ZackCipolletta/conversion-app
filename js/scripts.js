@@ -1,53 +1,64 @@
-window.onload = function() {
+//window.onload = function() {
 
-function ozToPound(orignal) {
-    converted = orignal * 0.0625;
-    let originalMeasure = orignal;
-    return originalMeasure + " ounces is " + converted + " pounds of rice.";
-}
+
 
 function poundToOz(orignal) {
   converted = orignal * 16;
     let originalMeasure = orignal;
-    return originalMeasure + " pounds is " + converted + " ounces of rice.";
+    return originalMeasure + " pounds is " + converted + " ounces.";
 }
 
 function ozToGram(orignal) {
   converted = orignal * 28.3495;
   let originalMeasure = orignal;
-  return originalMeasure + " ounces is " + converted + " grams of rice.";
+  return originalMeasure + " ounces is " + converted + " grams.";
 }
 
 function poundToGram(orignal) {
   converted = orignal * 453.592;
   let originalMeasure = orignal;
-  return originalMeasure + " pounds is " + converted + " grams of rice.";
+  return originalMeasure + " pounds is " + converted + " grams.";
 }
 
 function tspToTbsp(orignal) {
   converted = orignal * 0.333333;
   let originalMeasure = orignal;
-  return originalMeasure + " teaspons is " + converted + " tablespoons of water.";
+  return originalMeasure + " teaspons is " + converted + " tablespoons.";
 }
 
 function tspToMls(orignal) {
   converted = orignal * 4.92892;
   let originalMeasure = orignal;
-  return originalMeasure + " teaspons is " + converted + " milliliters of water.";
+  return originalMeasure + " teaspons is " + converted + " milliliters.";
 }
 
 function tbsToMls(orignal) {
   converted = orignal * 14.7868;
   let originalMeasure = orignal;
-  return originalMeasure + " tabllespoons is " + converted + " milliliters of water.";
+  return originalMeasure + " tabllespoons is " + converted + ".";
 }
 
 let body= document.body;
 //.style.background;
 
-let button1 = document.querySelector(".button1");
-let button2 = document.querySelector(".button2");
+const button1 = document.querySelector(".button1");
+const button2 = document.querySelector(".button2");
 let h1 = document.querySelector(".class1");
+const normal = document.querySelector(".normal");
+const xLarge = document.querySelector(".xLarge");
+
+
+const ounceToLb = document.querySelector(".ozToPound");
+
+const ozToPound = function (orignal) {
+  //converted = orignal * 0.0625;
+  //let originalMeasure = orignal;
+  console.log('hello');
+  //return originalMeasure + " ounces is " + converted + " pounds.";
+}
+
+ounceToLb.onclick = ozToPound();
+
 
 h1.onclick = function() {
   console.log("Hello");
@@ -66,5 +77,16 @@ button2.onclick = function() {
   body.style.color = "black";
 };
 
+normal.onclick = function() {
+  console.log("Normal size text")
+  body.style.fontSize="medium";
+};
 
-}
+xLarge.onclick = function() {
+  console.log("X-Large text")
+  body.style.fontSize="x-large";
+};
+
+
+
+//}
